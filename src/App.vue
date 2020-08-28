@@ -3,18 +3,21 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <TestAPI msg="Test!" />
+    <Setup />
 </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import TestAPI from './components/TestAPI.vue'
+import Setup from './components/Setup.vue'
 
 export default {
     name: 'App',
     components: {
         HelloWorld,
-        TestAPI
+        TestAPI,
+        Setup
     }
 }
 </script>
