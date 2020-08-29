@@ -1,5 +1,5 @@
 <template>
-  <div class="lifecycle">
+  <div class="module lifecycle">
     <h2 class>LifeCycle</h2>
     <p>Look Console!</p>
   </div>
@@ -24,7 +24,6 @@ export default defineComponent({
 
 <style lang="css" scoped>
 .lifecycle {
-  padding: 30px 0;
   background-color: #8c47bf;
   color: #fff;
 }

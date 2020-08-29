@@ -1,5 +1,5 @@
 <template>
-<div class="setup" :style="boxStyle">
+<div class="module setup" :style="boxStyle">
     <h3>Setup --> BackgroundColor:{{ colorValue }}</h3>
     <p>{{ count }} : {{ objectRea.foo }}</p>
 </div>
@@ -12,7 +12,7 @@ import {
     defineComponent, // 主要是为了让TS类型提示变得友好一点
 } from "vue";
 
-import getRandomColor from "../libs/geRandomColor.js";
+import getRandomColor from "../libs/getRandomColor.js";
 
 //随机颜色值 16hex
 const colorValue = getRandomColor();
@@ -23,7 +23,7 @@ export default defineComponent({
             count: 0,
             colorValue,
             boxStyle: {
-                "background-color": colorValue,
+                "background-color": colorValue
             },
         };
     },
@@ -47,7 +47,6 @@ export default defineComponent({
 <!--实现组件的私有化,不对全局造成样式污染-->
 <style lang="css" scoped>
 .setup {
-    padding: 20px 0;
     color: blanchedalmond;
 }
 </style>

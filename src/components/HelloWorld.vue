@@ -1,5 +1,5 @@
 <template>
-<div class="hello">
+<div class="module hello">
     <h1>Hello</h1>
     <!-- 
     <h1>{{ msg }}</h1>
@@ -63,7 +63,6 @@ a {
     color: #42b983;
 }
 .hello{
-  padding: 20px 0;
   background-color: wheat;
   color: coral;
 }

@@ -1,5 +1,5 @@
 <template>
-<div class="reactive-api">
+<div class="module reactive-api">
     <h2>Reactive API {{ msg }}</h2>
     <p>count is {{ count }}</p>
     <p>plusOne is {{ plusOne }}</p>
@@ -100,7 +100,6 @@ export default {
 
 <style lang="css">
 .reactive-api {
-    padding: 20px 0;
     background-color: teal;
     color: bisque;
 }
