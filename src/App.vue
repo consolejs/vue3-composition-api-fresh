@@ -8,27 +8,26 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import TestAPI from './components/TestAPI.vue'
-import Setup from './components/Setup.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import TestAPI from "./components/TestAPI.vue";
+import Setup from "./components/Setup.vue";
 
 export default {
-    name: 'App',
+    name: "App",
     components: {
         HelloWorld,
         TestAPI,
-        Setup
-    }
-}
+        Setup,
+    },
+};
 </script>
 
 <style>
 #app {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     color: #2c3e50;
     text-align: center;
     font-family: Avenir, Helvetica, Arial, sans-serif;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
