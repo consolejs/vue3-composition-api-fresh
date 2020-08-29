@@ -4,6 +4,7 @@
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <TestAPI msg="Test!" />
     <Setup />
+    <LifeCycle />
 </div>
 </template>
 
@@ -11,6 +12,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import TestAPI from "./components/TestAPI.vue";
 import Setup from "./components/Setup.vue";
+import LifeCycle from "./components/LifeCycle.vue";
 
 export default {
     name: "App",
@@ -18,6 +20,7 @@ export default {
         HelloWorld,
         TestAPI,
         Setup,
+        LifeCycle
     },
 };
 </script>

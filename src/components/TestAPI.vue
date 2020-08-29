@@ -5,7 +5,7 @@
     <p>plusOne is {{ plusOne }}</p>
     <button @click="increment">count +1 </button>
     <p>multiplyTwo is {{ multiplyTwo }}</p>
-    <button @click="treble">count 2倍</button>
+    <button @click="treble">count x2</button>
 </div>
 </template>
 
