@@ -2,7 +2,7 @@
 <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <HelloWorld msg="Welcome to Your Vue.js App" />
-    <TestAPI msg="Test!" />
+    <ReactiveAPI msg="Reactive API!" />
     <Setup />
     <LifeCycle />
 </div>
@@ -10,7 +10,7 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import TestAPI from "./components/TestAPI.vue";
+import ReactiveAPI from "./components/ReactiveAPI.vue";
 import Setup from "./components/Setup.vue";
 import LifeCycle from "./components/LifeCycle.vue";
 
@@ -18,7 +18,7 @@ export default {
     name: "App",
     components: {
         HelloWorld,
-        TestAPI,
+        ReactiveAPI,
         Setup,
         LifeCycle
     },

@@ -1,6 +1,6 @@
 <template>
-<div class="hooks-one">
-    <h2>TestAPI {{ msg }}</h2>
+<div class="reactive-api">
+    <h2>Reactive API {{ msg }}</h2>
     <p>count is {{ count }}</p>
     <p>plusOne is {{ plusOne }}</p>
     <button @click="increment">count +1 </button>
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style lang="css">
-    .hooks-one{
+    .reactive-api{
         padding: 20px 0;
         background-color: teal;
         color: bisque;
