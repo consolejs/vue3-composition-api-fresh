@@ -6,6 +6,7 @@
     <Setup />
     <LifeCycle />
     <Injection />
+    <TemplateRefs />
 </div>
 </template>
 
@@ -15,6 +16,7 @@ import ReactiveAPI from "./components/ReactiveAPI.vue";
 import Setup from "./components/Setup.vue";
 import LifeCycle from "./components/LifeCycle.vue";
 import Injection from "./components/Injection.vue";
+import TemplateRefs from "./components/TemplateRefs.vue";
 
 export default {
     name: "App",
@@ -23,7 +25,8 @@ export default {
         ReactiveAPI,
         Setup,
         LifeCycle,
-        Injection
+        Injection,
+        TemplateRefs
     },
 };
 </script>
