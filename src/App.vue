@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <ReactiveAPI msg="Reactive API!" />
-    <Setup />
+    <Setup name="seeeetup!" foo="我是从父组件来的!" />
     <LifeCycle />
     <Injection />
     <TemplateRefs />
