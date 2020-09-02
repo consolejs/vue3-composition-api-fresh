@@ -22,7 +22,7 @@ const colorValue = getRandomColor();
 
 export default defineComponent({
   props: {
-    name: String,//指定类型 string
+    name: String, //指定类型 string
   },
   data() {
     return {
