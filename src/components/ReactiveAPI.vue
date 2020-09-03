@@ -27,13 +27,30 @@ export default {
         }
     },
     setup() {
-        // reactive state 响应式数据
+
+        /**
+            * ref
+            * 接受一个参数值并返回一个响应式且可改变的 ref 对象。
+            * ref 对象拥有一个指向内部值的单一属性 .value。
+            * 如果传入 ref 的是一个对象，将调用 reactive 方法进行深层响应转换。
+         */
+        
         const count = ref(0)
 
+        /**
+            * reactive
+            * 接收一个普通对象然后返回该普通对象的响应式代理。等同于 2.x 的 Vue.observable()
+            * 响应式转换是“深层的”：会影响对象内部所有嵌套的属性。
+            * 基于 ES2015 的 Proxy 实现，返回的代理对象不等于原始对象。
+         */
         const original = reactive({
             count: 3
         })
 
+        /** 
+            * 传入一个对象（响应式或普通）或 ref，返回一个原始对象的只读代理。
+            * 一个只读的代理是“深层的”，对象内部任何嵌套的属性也都是只读的。
+         */
         const copy = readonly(original)
 
         // computed state
@@ -56,9 +73,11 @@ export default {
         })
 
         /**
-         * 选项 flush:
+         * 立即执行传入的一个函数，并响应式追踪其依赖，并在其依赖变更时重新运行该函数。
+         * 如果副作用需要同步或在组件更新之前重新运行，
+         * 我们可以传递一个拥有 flush 属性的对象作为选项（默认为 'post'）：
          * sync  同步
-         * pre    在更新（update）之前
+         * pre   在更新（update）之前
          * post  在更新(update)之后， 这个是默认行为
          */
         watchEffect(() => {
