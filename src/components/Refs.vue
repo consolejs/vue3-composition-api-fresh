@@ -1,5 +1,5 @@
 <template>
-<div ref="root">Refs</div>
+<div ref="root" class="refs">Refs</div>
 </template>
 
 <script>
@@ -21,3 +21,11 @@ export default defineComponent({
     }
 })
 </script>
+
+<style scoped> 
+    .refs{
+        padding: 20px 0;
+        color: darkcyan;
+        font-weight: 600;
+    }
+</style>
