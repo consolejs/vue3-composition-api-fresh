@@ -7,6 +7,7 @@
     <LifeCycle />
     <Injection />
     <TemplateRefs />
+    <Refs />
 </div>
 </template>
 
@@ -17,6 +18,7 @@ import Setup from "./components/Setup.vue";
 import LifeCycle from "./components/LifeCycle.vue";
 import Injection from "./components/Injection.vue";
 import TemplateRefs from "./components/TemplateRefs.vue";
+import Refs from "./components/Refs.vue";
 
 export default {
     name: "App",
@@ -26,7 +28,8 @@ export default {
         Setup,
         LifeCycle,
         Injection,
-        TemplateRefs
+        TemplateRefs,
+        Refs
     },
 };
 </script>
