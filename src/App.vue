@@ -8,6 +8,7 @@
     <Injection />
     <TemplateRefs />
     <Refs />
+    <Event />
 </div>
 </template>
 
@@ -19,6 +20,7 @@ import LifeCycle from "./components/LifeCycle.vue";
 import Injection from "./components/Injection.vue";
 import TemplateRefs from "./components/TemplateRefs.vue";
 import Refs from "./components/Refs.vue";
+import Event from "./components/Event.vue";
 
 export default {
     name: "App",
@@ -29,7 +31,8 @@ export default {
         LifeCycle,
         Injection,
         TemplateRefs,
-        Refs
+        Refs,
+        Event,
     },
 };
 </script>
