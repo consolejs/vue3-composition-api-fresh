@@ -9,6 +9,7 @@
     <TemplateRefs />
     <Refs />
     <Event />
+    <Vuex />
 </div>
 </template>
 
@@ -21,6 +22,7 @@ import Injection from "./components/Injection.vue";
 import TemplateRefs from "./components/TemplateRefs.vue";
 import Refs from "./components/Refs.vue";
 import Event from "./components/Event.vue";
+import Vuex from "./components/Vuex.vue";
 
 export default {
     name: "App",
@@ -33,6 +35,7 @@ export default {
         TemplateRefs,
         Refs,
         Event,
+        Vuex,
     },
 };
 </script>
